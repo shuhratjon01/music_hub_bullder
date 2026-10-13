@@ -1,0 +1,35 @@
+name: musichub
+description: MusicHub - YouTube music player with offline downloads, sleep timer and equalizer.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  just_audio: ^0.9.40
+  audio_service: ^0.18.15
+  audio_session: ^0.1.21
+  youtube_explode_dart: ^2.3.5
+  path_provider: ^2.1.4
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/cover/
+
+# Иконка приложения берётся из папки assets/cover
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/cover/cover.png
+  adaptive_icon_background: "#0B0B0D"
+  adaptive_icon_foreground: assets/cover/cover_foreground.png
